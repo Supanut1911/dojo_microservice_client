@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package app;
+
+service AppController {
+    rpc ShoutOut(TextInput) returns (TextOutput);
+}
+
+message TextInput {
+    string message = 1;
+} 
+
+message TextOutput {
+    string messageReturn = 1;
+}
